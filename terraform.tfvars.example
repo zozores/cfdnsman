@@ -1,0 +1,31 @@
+cloudflare_api_token = "your-api-token"
+
+zones = {
+  "example-com" = {
+    zone_id = "your-zone-id-1"
+    records = {
+      "www" = {
+        name    = "www"
+        value   = "192.0.2.1"
+        type    = "A"
+        proxied = true
+      }
+      "api" = {
+        name    = "api"
+        value   = "192.0.2.2"
+        type    = "A"
+      }
+    }
+  }
+  "example-net" = {
+    zone_id = "your-zone-id-2"
+    records = {
+      "mail" = {
+        name     = "mail"
+        value    = "mail.example.net"
+        type     = "CNAME"
+        priority = 10
+      }
+    }
+  }
+}
