@@ -29,3 +29,13 @@ zones = {
     }
   }
 }
+
+adguard_host     = "192.168.1.100"
+adguard_username = "admin"
+adguard_password = "password"
+adguard_rewrites = [
+  {
+    domain = "example.local"
+    answer = "192.168.1.10"
+  }
+]

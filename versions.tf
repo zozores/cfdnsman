@@ -6,6 +6,10 @@ terraform {
       source  = "cloudflare/cloudflare"
       version = "~> 4.0"
     }
+    adguard = {
+      source  = "gmichels/adguard"
+      version = "1.6.2"
+    }
   }
 }
 
